@@ -1,0 +1,6 @@
+services:
+  hermitage-bot:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./data:/usr/app/data
